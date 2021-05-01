@@ -11,3 +11,5 @@ The current generation is driven by the build script. The equivalent bindgen inv
 ```sh
 bindgen libopentok/include/opentok.h -o src/bindings.rs  --whitelist-function 'otc_.*' --whitelist-var 'OTC_.*'
 ```
+
+The current SDK version is: 2.19.1
