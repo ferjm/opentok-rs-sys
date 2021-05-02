@@ -12,7 +12,8 @@ fn main() {
     let bindings = bindgen::Builder::default()
         .header("./libopentok/include/opentok.h")
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
-        .allowlist_type("OTC_.*")
+        .allowlist_var("OTC_.*")
+        .allowlist_type("otc_.*")
         .allowlist_function("otc_.*")
         .generate()
         .expect("Unable to generate bindings");
