@@ -61,12 +61,11 @@ enum otc_video_frame_plane {
   OTC_VIDEO_FRAME_PLANE_U = 1, /**< Video frame plane U enum value. */
   OTC_VIDEO_FRAME_PLANE_V = 2, /**< Video frame plane V enum value. */
 
-  OTC_VIDEO_FRAME_PLANE_PACKED =
-      0, /**< Video frame plane packed  enum value. */
+  OTC_VIDEO_FRAME_PLANE_PACKED = 3, /**< Video frame plane packed  enum value. */
   OTC_VIDEO_FRAME_PLANE_UV_INTERLEAVED =
-      1, /**< Video frame plane UV interleaved enum value. */
+      4, /**< Video frame plane UV interleaved enum value. */
   OTC_VIDEO_FRAME_PLANE_VU_INTERLEAVED =
-      1, /**< Video frame plane VU interleaved enum value. */
+      5, /**< Video frame plane VU interleaved enum value. */
 };
 
 /** Defines a struct containing callback functions for a video frame plane
